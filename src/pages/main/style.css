@@ -45,15 +45,21 @@ body {
   flex-wrap: wrap;
   /* align-items: center; */
   /* text-align: center; */
-  position: relative;
+  /* position: relative; */
 }
 .main-nav {
   /* flex: 100%; */
   width: 100%;
   display: flex;
+  /* align-items: center; */
+  /* flex-wrap: wrap; */
   background-color: transparent;
   position: absolute;
+  z-index: 9;
+  position: fixed;
+  transition: all 0.5s ease 0.2s;
 }
+
 .navbar-logo {
   background-color: transparent;
   padding: 20px;
@@ -66,6 +72,7 @@ body {
   font-family: cursive;
   color: white;
   text-align: end;
+  font-family: Raleway-VariableFont_wght;
 }
 .navbar-main-text {
   flex: 70%;
@@ -74,16 +81,29 @@ body {
   align-items: center;
   justify-content: center;
   gap: 46px;
+  font-family: Raleway-VariableFont_wght;
 }
 .navbar-text {
   font-size: 24px;
   font-weight: 700;
   color: white;
   text-transform: uppercase;
+  cursor: pointer;
+}
+.navbar-text a:hover {
+  color: #d58516;
+  transition: 0.4s;
+}
+.navbar-text a {
+  text-decoration: none;
+  display: block;
+  color: white;
 }
 
 .head-image {
   width: 100%;
+
+  position: relative;
 }
 .head-image img {
   object-fit: cover;
@@ -91,10 +111,62 @@ body {
   background-size: 100% 100%;
 }
 
-.image-center-text {
+/* .image-center-text {
   position: absolute;
-}
+} */
 
+.top_center_box {
+  background-color: transparent;
+  width: 100%;
+  position: absolute;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+}
+.top_center_content {
+  width: 50%;
+  background-color: azure;
+  opacity: 0.8;
+  text-align: center;
+  padding: 18px;
+  height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.center_width {
+  width: 100%;
+}
+.text_head h1 {
+  margin: 0;
+  font-family: Cookie-Regular, serif;
+  font-size: 80px;
+  font-weight: 300;
+  color: #2a3b40;
+}
+.text_head h2 {
+  margin: 0;
+  font-family: Raleway-VariableFont_wght;
+  font-size: 70px;
+  color: #d58516;
+  /* font-size: 50px; */
+}
+.top_center_button {
+  margin: 0;
+}
+.text_head button {
+  padding: 5px;
+  width: 46%;
+  border: 0;
+  background: white;
+  font-size: 30px;
+}
+.text_head button:focus {
+  outline: 0;
+}
 /* .navbar-text {
   flex: 10%;
   padding: 10px;
@@ -217,13 +289,19 @@ body {
   background-color: rgb(243, 243, 243);
 }
 .grand-child-head h1 {
-  font-size: 45px;
-  font-family: sans-serif;
+  font-size: 60px;
+  font-family: Cookie-Regular;
+  text-transform: capitalize;
+  margin-bottom: 0;
+  font-weight: 200;
 }
 .grand-child-head h2 {
+  margin-top: 0;
   font-size: 45px;
   color: #ad6c12;
+  font-family: Raleway-VariableFont_wght;
 }
+/* Raleway-VariableFont_wght */
 .grand-child-content {
   flex-direction: row;
   display: flex;
@@ -297,6 +375,10 @@ body {
   /* padding: 10px; */
   background-color: transparent;
 }
+.cuisine-row-text p {
+  font-size: 25px;
+  font-family: Raleway-VariableFont_wght;
+}
 .ellipse-main-cuisine {
   display: flex;
   flex-wrap: wrap;
@@ -367,10 +449,18 @@ body {
   align-items: center;
   padding: 20px;
 }
+.new-menu-head h1 {
+  margin-bottom: 0;
+  font-weight: 500;
+  color: #2a3b40;
+  font-family: Cookie-Regular;
+  font-size: 68px;
+}
 .new-menu-head h2 {
-  margin: 0;
-  font-size: 36px;
+  margin-top: 0;
+  font-size: 45px;
   color: #e79300;
+  font-family: Raleway-VariableFont_wght;
 }
 .end_main_image {
   width: 100%;
@@ -389,20 +479,16 @@ body {
   /* align-items: center; */
   flex-direction: row;
   justify-content: center;
-  padding:40px 0px;
+  padding: 40px 0px;
 }
 .booking_forms {
-  padding: 24px;
+  padding: 15px 0px;
 }
 .booking_col {
   width: 30%;
-  text-align: center;
+  padding: 10px;
+  text-align: start;
 }
-.booking_col {
-  width: 30%;
-  text-align: center;
-}
-
 .booking_label h4 {
   margin: 0;
   font-size: 22px;
@@ -415,26 +501,11 @@ body {
 .booking_input input::placeholder {
   color: white;
 }
-.booking_input input {
-  width: 55%;
-  font-size: 18px;
-  border-radius: 15px;
-  border: 3px solid white;
-  /* font-family: ; */
-  background-color: transparent;
-  padding: 10px;
-  font-weight: 700;
-  color: white;
-}
-.booking_button {
+.booking_input {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-.booking_button button {
-  width: 15%;
-  text-align: center;
+.booking_input input {
+  width: 70%;
   font-size: 18px;
   border-radius: 15px;
   border: 3px solid white;
@@ -444,6 +515,7 @@ body {
   font-weight: 700;
   color: white;
 }
+
 .booking_head {
   width: 100%;
   text-align: center;
@@ -455,6 +527,37 @@ body {
 }
 .booking_text h1 {
   margin: 0;
+  font-family: Cookie-Regular, serif;
+  font-weight: 100;
+  font-size: 80px;
+}
+
+.booking_row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking_button {
+  padding: 20px 0px;
+  width: 30%;
+  text-align: start;
+  /* background: black; */
+}
+.booking_row_btn {
+  /* padding: 35px 20px; */
+}
+.booking_row button {
+  width: 75%;
+  border: 3px solid white;
+  background: transparent;
+  border-radius: 12px;
+  padding: 5px;
+  font-size: 22px;
+  color: white;
+  font-weight: 700;
 }
 
 .discover_box {
@@ -503,14 +606,16 @@ p {
 }
 .discover_tile h1 {
   margin: 0;
-  font-size: 42px;
-  font-family: cursive;
+  font-size: 70px;
+  font-weight: 200;
+  font-family: Cookie-Regular, serif;
   color: #2a3b40;
 }
 .discover_tile h2 {
-  font-size: 50px;
+  font-size: 54px;
   margin: 0;
   color: #d58516;
+  font-family: Raleway-VariableFont_wght;
 }
 .social_box {
   display: flex;
@@ -559,6 +664,7 @@ p {
   /* padding: 10px 20px; */
   align-items: center;
   gap: 40px;
+  font-family: Raleway-VariableFont_wght;
 }
 .footer_col {
   width: 15%;
@@ -569,9 +675,12 @@ p {
 }
 .footer_child h2 {
   margin: 0;
+  font-family: Raleway-VariableFont_wght;
+  font-weight: 300;
 }
 .footer_child p {
   font-size: 23px;
+  font-family: Raleway-VariableFont_wght;
 }
 
 .menu_row {
@@ -614,6 +723,65 @@ p {
   justify-content: center;
 }
 
+.navbar_main {
+  width: 100%;
+  display: none;
+  background-color: #2a3b40;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+.navbar_menu_button {
+  padding: 15px;
+}
+.navbar_menu_button button {
+  width: 50px;
+  height: 50px;
+  border: 0;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 3px;
+}
+.navbar_menu_button button img {
+  width: 35px;
+  height: 46px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.9s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
 @media (max-width: 1272px) {
   .menu_row {
     padding: 0px 0px;
@@ -622,12 +790,6 @@ p {
 @media (max-width: 1113px) {
   .new-menu-content-child {
     padding: 10px;
-  }
-  .booking_input input {
-    width: 100%;
-  }
-  .booking_button button {
-    width: 30%;
   }
 }
 
@@ -666,12 +828,19 @@ p {
   .content_box p {
     text-align: center;
   }
-  .discover_box{
+  .discover_box {
     padding: 15px;
   }
   .discover_card {
     width: 30%;
-}
+  }
+  .top_center_box {
+    height: 600px;
+    align-items: flex-end;
+  }
+  .top_center_content {
+    width: 70%;
+  }
 }
 @media (max-width: 947px) {
   .new-menu-content-row {
@@ -683,7 +852,7 @@ p {
   .new-menu-row1 {
     display: none;
   }
-  .social_content{
+  .social_content {
     width: 90%;
   }
 }
@@ -721,8 +890,18 @@ p {
   .cuisine-row img {
     width: 100%;
   }
-  .footer_col_main{
+  .footer_col_main {
     padding: 50px;
+  }
+  .top_center_box {
+    height: 500px;
+  }
+  .navbar-logo {
+    text-align: center;
+    flex: 15%;
+  }
+  .top_center_content {
+    width: 100%;
   }
 }
 
@@ -747,7 +926,38 @@ p {
   }
   .discover_card {
     width: 70%;
-}
+  }
+  .booking_col {
+    width: 100%;
+    text-align: center;
+  }
+  .booking_row button {
+    width: 80%;
+    border-radius: 15px;
+  }
+  .menu {
+    background-color: #2a3b40;
+    background-repeat: no-repeat;
+    /* background-size: 100% 100%; */
+    /* object-fit: cover; */
+    /* width: 100%; */
+  }
+  .main-nav {
+    display: none;
+  }
+  .navbar_main {
+    display: block;
+  }
+  .top_center_box {
+    height: 460px;
+  }
+  .top_center_content {
+    height: 300px;
+  }
+  .cuisine-row-text p {
+    font-size: 18px;
+    font-family: Raleway-VariableFont_wght;
+  }
 }
 
 @media (max-width: 666px) {
@@ -786,13 +996,19 @@ p {
   .content_box p {
     text-align: start;
   }
-  .footer_col_main{
+  .footer_col_main {
     width: 100%;
     text-align: center;
   }
-  .footer_col{
+  .footer_col {
     width: 30%;
     text-align: center;
+  }
+  .top_center_content {
+    height: fit-content;
+  }
+  .top_center_box {
+    align-items: center;
   }
 }
 @media (max-width: 571px) {
@@ -813,9 +1029,18 @@ p {
     padding: 10px;
     justify-content: center;
   }
-  .social_icons{
+  .social_icons {
     gap: 20px;
     justify-content: center;
+  }
+  .text_head button {
+    font-size: 24px;
+  }
+  .text_head h2 {
+    font-size: 45px;
+  }
+  .text_head h1 {
+    font-size: 60px;
   }
 }
 
@@ -829,6 +1054,28 @@ p {
   }
   .card {
     flex: 50%;
+  }
+  .top_center_box {
+    height: 400px;
+  }
+}
+@media (max-width: 427px) {
+  .top_center_box {
+    height: 375px;
+  }
+}
+@media (max-width: 369px) {
+  .text_head h1 {
+    font-size: 40px;
+  }
+  .text_head h2 {
+    font-size: 24px;
+  }
+  .text_head button {
+    font-size: 15px;
+  }
+  .top_center_box {
+    height: 340px;
   }
 }
 /* New Css Start */
