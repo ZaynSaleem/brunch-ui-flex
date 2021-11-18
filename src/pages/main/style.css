@@ -14,11 +14,9 @@ body {
   display: flex;
   background-color: tomato;
   justify-content: start;
-  /* padding: 10px; */
   flex-direction: row;
 }
 .left-text {
-  /* flex: 20%; */
   text-align: center;
   width: 100%;
   padding: 20px;
@@ -28,12 +26,10 @@ body {
   flex: 50%;
   display: flex;
   justify-content: end;
-  /* padding: 10px; */
   background-color: rgb(198, 219, 127);
 }
 
 .right-text {
-  /* flex: 20%; */
   text-align: center;
   width: 100%;
   padding: 20px;
@@ -43,16 +39,10 @@ body {
 .navbar {
   display: flex;
   flex-wrap: wrap;
-  /* align-items: center; */
-  /* text-align: center; */
-  /* position: relative; */
 }
 .main-nav {
-  /* flex: 100%; */
   width: 100%;
   display: flex;
-  /* align-items: center; */
-  /* flex-wrap: wrap; */
   background-color: transparent;
   position: absolute;
   z-index: 9;
@@ -110,11 +100,6 @@ body {
   width: 100%;
   background-size: 100% 100%;
 }
-
-/* .image-center-text {
-  position: absolute;
-} */
-
 .top_center_box {
   background-color: transparent;
   width: 100%;
@@ -152,7 +137,6 @@ body {
   font-family: Raleway-VariableFont_wght;
   font-size: 70px;
   color: #d58516;
-  /* font-size: 50px; */
 }
 .top_center_button {
   margin: 0;
@@ -167,36 +151,11 @@ body {
 .text_head button:focus {
   outline: 0;
 }
-/* .navbar-text {
-  flex: 10%;
-  padding: 10px;
-  justify-content: center;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  background-color: transparent;
-  color: white;
-  font-size: 23px;
-  font-family: cursive;
-  font-weight: 400;
-} */
-
 .img {
   flex: 100%;
-  /* height: 100vh; */
-  /* background-color: violet;
-    background-size: 100%;
-    background-position:center;
-    background: cover; */
-
-  /* min-height: 800px; */
-
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  /* Needed to position the navbar */
   position: relative;
 }
 
@@ -222,15 +181,10 @@ body {
   align-items: center;
   justify-content: center;
 }
-.traditional-image img {
-  /* width: 100%; */
-}
-
 .third-row {
   display: flex;
   flex: 100%;
   background-color: rgb(242 242 242);
-  /* opacity: 0.1; */
   order: 3;
   justify-content: space-evenly;
   color: #2a3b40;
@@ -252,16 +206,13 @@ body {
 .col-three {
   padding: 28.1px;
   flex: 100%;
-
   text-align: start;
 }
-
 .ellipse-main {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
-
 .ellipse {
   background-color: #2a3b40;
   height: 30px;
@@ -301,31 +252,23 @@ body {
   color: #ad6c12;
   font-family: Raleway-VariableFont_wght;
 }
-/* Raleway-VariableFont_wght */
 .grand-child-content {
   flex-direction: row;
   display: flex;
-  /* gap: 10px; */
-  /* opacity: 0.9; */
   background-color: rgb(243, 243, 243);
-  /* padding: 10px; */
   flex-wrap: wrap;
   align-items: center;
 }
 .card {
   flex: 20%;
   text-align: center;
-  /* opacity: 0.8; */
   background-color: rgb(243, 243, 243);
-
   color: #2a3b40;
 }
 .card h3 {
   text-transform: uppercase;
 }
 .card img {
-  /* opacity: 2.1; */
-  /* background-color: thistle; */
   width: 100%;
   height: 100%;
 }
@@ -344,7 +287,6 @@ body {
   display: flex;
   background-color: transparent;
   justify-content: start;
-  /* padding: 10px; */
   flex-direction: row;
 }
 
@@ -352,7 +294,6 @@ body {
   flex: 50%;
   display: flex;
   justify-content: end;
-  /* padding: 10px; */
   background-color: transparent;
 }
 .cuisine-row2 {
@@ -370,9 +311,7 @@ body {
   height: 400px;
 }
 .cuisine-row-text {
-  /* flex: 50%; */
   width: 50%;
-  /* padding: 10px; */
   background-color: transparent;
 }
 .cuisine-row-text p {
@@ -386,7 +325,6 @@ body {
   justify-content: center;
   padding: 50px;
 }
-
 .cuisine-end {
   display: flex;
   flex-wrap: wrap;
@@ -394,10 +332,7 @@ body {
   justify-content: center;
 }
 .cuisine-text {
-  /* flex: 20%; */
   width: 12%;
-
-  /* padding: 21px; */
 }
 .new-menu {
   display: flex;
@@ -435,7 +370,6 @@ body {
   opacity: 0.93;
 }
 .new-menu-content {
-  /* width: 80%; */
   background-color: aqua;
   display: flex;
   flex-wrap: wrap;
@@ -471,12 +405,10 @@ body {
 .end_main_image img {
   width: 100%;
 }
-
 .booking_box {
   background-color: #2a3b40;
   display: flex;
   flex-wrap: wrap;
-  /* align-items: center; */
   flex-direction: row;
   justify-content: center;
   padding: 40px 0px;
@@ -509,13 +441,11 @@ body {
   font-size: 18px;
   border-radius: 15px;
   border: 3px solid white;
-  /* font-family: ; */
   background-color: transparent;
   padding: 10px;
   font-weight: 700;
   color: white;
 }
-
 .booking_head {
   width: 100%;
   text-align: center;
@@ -531,7 +461,6 @@ body {
   font-weight: 100;
   font-size: 80px;
 }
-
 .booking_row {
   width: 100%;
   display: flex;
@@ -539,15 +468,10 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .booking_button {
   padding: 20px 0px;
   width: 30%;
   text-align: start;
-  /* background: black; */
-}
-.booking_row_btn {
-  /* padding: 35px 20px; */
 }
 .booking_row button {
   width: 75%;
@@ -559,7 +483,6 @@ body {
   color: white;
   font-weight: 700;
 }
-
 .discover_box {
   background-color: #dfdfdf;
   display: flex;
@@ -574,12 +497,10 @@ body {
 }
 .discover_card_image {
   width: 100%;
-  /* background-color: #ad6c12; */
   background-repeat: "no-repeat";
   object-fit: "cover";
   background-size: "100% 100%";
 }
-
 .discover_card_image img {
   width: 100%;
 }
@@ -628,7 +549,6 @@ p {
 .social_head {
   width: 70%;
   color: white;
-  /* background-color: yellow; */
   text-align: center;
   padding: 25px;
 }
@@ -655,13 +575,10 @@ p {
   flex-wrap: wrap;
   align-items: center;
   background-color: #dfdfdf;
-  /* padding:10px 10px; */
   justify-content: center;
-  /* gap: 10px; */
 }
 .footer_content {
   justify-content: center;
-  /* padding: 10px 20px; */
   align-items: center;
   gap: 40px;
   font-family: Raleway-VariableFont_wght;
@@ -682,7 +599,6 @@ p {
   font-size: 23px;
   font-family: Raleway-VariableFont_wght;
 }
-
 .menu_row {
   width: 100%;
   display: flex;
@@ -699,7 +615,6 @@ p {
 .content_box h4 {
   padding-bottom: 10px;
 }
-
 .content_box h4,
 .content_box p {
   margin: 0;
@@ -722,7 +637,6 @@ p {
 .new-menu-content-child {
   justify-content: center;
 }
-
 .navbar_main {
   width: 100%;
   display: none;
@@ -747,7 +661,6 @@ p {
   width: 35px;
   height: 46px;
 }
-
 .sidenav {
   height: 100%;
   width: 0;
@@ -760,7 +673,6 @@ p {
   transition: 0.9s;
   padding-top: 60px;
 }
-
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -769,11 +681,9 @@ p {
   display: block;
   transition: 0.3s;
 }
-
 .sidenav a:hover {
   color: #f1f1f1;
 }
-
 .sidenav .closebtn {
   position: absolute;
   top: 0;
@@ -781,7 +691,6 @@ p {
   font-size: 36px;
   margin-left: 50px;
 }
-
 @media (max-width: 1272px) {
   .menu_row {
     padding: 0px 0px;
@@ -792,7 +701,6 @@ p {
     padding: 10px;
   }
 }
-
 @media (max-width: 1024px) {
   .traditional-image img {
     width: 100%;
@@ -841,6 +749,9 @@ p {
   .top_center_content {
     width: 70%;
   }
+  .content_box {
+    padding-left: 0px;
+  }
 }
 @media (max-width: 947px) {
   .new-menu-content-row {
@@ -856,14 +767,12 @@ p {
     width: 90%;
   }
 }
-
 @media (max-width: 893px) {
   .menu {
     background-color: #2a3b40;
     display: flex;
     flex: 100%;
     align-items: center;
-    /* padding: 100px; */
     justify-content: center;
   }
   .menu-child {
@@ -881,7 +790,6 @@ p {
   }
 
   .card {
-    /* flex: 100%; */
     width: 50%;
     padding: 0px;
     text-align: center;
@@ -912,8 +820,6 @@ p {
   }
   .card {
     flex: 40%;
-    /* gap: 10px; */
-    /* padding: 10px; */
   }
   .cuisine-row img {
     height: 300px;
@@ -938,9 +844,6 @@ p {
   .menu {
     background-color: #2a3b40;
     background-repeat: no-repeat;
-    /* background-size: 100% 100%; */
-    /* object-fit: cover; */
-    /* width: 100%; */
   }
   .main-nav {
     display: none;
@@ -966,8 +869,6 @@ p {
   }
   .main-nav {
     flex-direction: column;
-    /* width: 200px; */
-    /* flex: 100%; */
   }
   .navbar-main-text {
     flex-direction: column;
@@ -1017,7 +918,6 @@ p {
     padding-top: 5px;
     text-align: center;
   }
-
   .icon_box {
     height: 58px;
     width: 58px;
@@ -1032,6 +932,7 @@ p {
   .social_icons {
     gap: 20px;
     justify-content: center;
+    padding: 25px;
   }
   .text_head button {
     font-size: 24px;
@@ -1078,6 +979,3 @@ p {
     height: 340px;
   }
 }
-/* New Css Start */
-
-/* New Css End */

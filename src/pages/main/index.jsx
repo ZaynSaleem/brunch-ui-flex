@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 import "./style.css";
 import main from "../../assets/main.png";
 import menuMain from "../../assets/menu-main.png";
@@ -37,12 +38,10 @@ const Index = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-
-      if(window.scrollY > 80) {
-        setNavBgColor('#2a3b40');
-      }
-      else{
-        setNavBgColor('transparent')
+      if (window.scrollY > 80) {
+        setNavBgColor("#2a3b40");
+      } else {
+        setNavBgColor("transparent");
       }
     };
     document.addEventListener("scroll", handleScroll);
@@ -76,9 +75,36 @@ const Index = () => {
             <a className="closebtn" onClick={() => setMenuToggle(false)}>
               &times;
             </a>
-            <a href="#">Welcome</a>
-            <a href="#menu">Menu</a>
-            <a href="#events">Events</a>
+            <Link
+              activeClass="active"
+              to="Welcome"
+              spy={true}
+              smooth={true}
+              offset={80}
+              duration={1000}
+            >
+              Welcome
+            </Link>
+            <Link
+              activeClass="active"
+              to="menus"
+              spy={true}
+              smooth={true}
+              offset={10}
+              duration={1000}
+            >
+              Menu
+            </Link>
+            <Link
+              activeClass="active"
+              to="Events"
+              spy={true}
+              smooth={true}
+              offset={120}
+              duration={1600}
+            >
+              Events
+            </Link>
             <a href="">Contact</a>
           </div>
         </div>
@@ -86,20 +112,51 @@ const Index = () => {
         <div className="main-nav" style={{ backgroundColor: navBgColor }}>
           <div className="navbar-logo">BRUNCH</div>
           <div className="navbar-main-text">
-            <div className="navbar-text">Welcome</div>
             <div className="navbar-text">
-              <a href="#menu">Menu</a>
+              {" "}
+              <Link
+                activeClass="active"
+                to="Welcome"
+                spy={true}
+                smooth={true}
+                offset={80}
+                duration={1000}
+              >
+                Welcome
+              </Link>
             </div>
             <div className="navbar-text">
-              <a href="#events">Events</a>
+              <Link
+                activeClass="active"
+                to="menus"
+                spy={true}
+                smooth={true}
+                offset={10}
+                duration={1000}
+              >
+                Menu
+              </Link>
             </div>
             <div className="navbar-text">
-              <a href="">Contact</a>
+              <Link
+                activeClass="active"
+                to="Events"
+                spy={true}
+                smooth={true}
+                offset={1000}
+                duration={1600}
+              >
+                Events
+              </Link>
+            </div>
+            <div className="navbar-text">
+              <a href="#">Contact</a>
             </div>
           </div>
         </div>
 
         <div
+          name="Welcome"
           className="top_center_box"
           style={menuToggle === true ? { opacity: "0.56" } : { opacity: "1" }}
         >
@@ -179,18 +236,16 @@ const Index = () => {
           </div>
         </div>
 
-        <div className="flex-row">
+        <div className="flex-row" name="menus">
           <div
             className="menu"
             style={{
               backgroundImage: `url(${menuMain})`,
               backgroundRepeat: "repeat",
               objectFit: "cover",
-              // width: "100%",
-              // backgroundSize: "100% 100%",
             }}
           >
-            <div className="menu-child" id="menu">
+            <div className="menu-child">
               <div className="grand-child-head">
                 <h1>Pakistan</h1>
                 <h2>ON YOUR PLATE</h2>
@@ -301,12 +356,6 @@ const Index = () => {
                   <div className="ellipse"></div>
                   <div className="ellipse"></div>
                 </div>
-                {/* <div className="cuisine-end">
-                <div className="cuisine-text">Meals</div>
-                <div className="cuisine-text">Spices</div>
-                <div className="cuisine-text">Book</div>
-                <div className="cuisine-text">Gallery</div>
-              </div> */}
               </div>
             </div>
           </div>
@@ -389,11 +438,11 @@ const Index = () => {
           </div>
         </div>
 
-        <div className="end_main_image">
+        <div className="end_main_image" name="Events">
           <img src={EndMain} />
         </div>
 
-        <div className="booking_box" id="events">
+        <div className="booking_box">
           <div className="booking_row">
             <div className="booking_head">
               <div className="booking_text">

@@ -1,11 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
-import Index from './pages/main';
+import "./App.css";
+import Index from "./pages/main";
 
 function App() {
-  return (
-  <Index/>
-  );
+  return <Index />;
 }
 
 export default App;
